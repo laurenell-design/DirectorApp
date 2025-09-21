@@ -1,22 +1,23 @@
 {
   "name": "director-app",
   "version": "1.0.0",
-  "description": "Director App for handling Twilio webhooks and forwarding to Lovable app",
+  "description": "Twilio webhook director for story cards",
   "main": "server.js",
+  "type": "commonjs",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build": "echo 'No build step required'"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "axios": "^1.6.0",
-    "cors": "^2.8.5",
-    "helmet": "^7.1.0"
+    "@supabase/supabase-js": "^2.38.5"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": "18.x",
+    "npm": "9.x"
   },
-  "keywords": ["twilio", "webhook", "director"],
-  "author": "Lauren",
+  "keywords": ["twilio", "webhook", "express"],
+  "author": "Your Name",
   "license": "MIT"
 }
